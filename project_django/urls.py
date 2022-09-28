@@ -19,7 +19,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),  
     path('mywatchlist/', include('mywatchlist.urls')),
-    path('katalog/', include('katalog.urls'))
+    path('katalog/', include('katalog.urls')),
+    path('todolist/', include('todolist.urls')),
 ]
 
 # TODO: Implement Routings Here
