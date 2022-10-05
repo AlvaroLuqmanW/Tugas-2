@@ -2,41 +2,90 @@
 
 <html>
    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <title>{{user}}'s ToDo List</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <style>
       body {
-          background-image: url('https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg');
+          background-image: url('https://images.pling.com/img/00/00/62/69/92/1719813/minimalist-desktop-38.jpg');
        }
+       h3 {
+          margin: 0;
+          font-size: 100px;
+          font-weight: bold;
+          -webkit-text-stroke: 2px rgb(218, 203, 203);       
+      }
+      a{
+        font-weight: bold;
+        font-size: 5px;
+      }
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 12px;
+        text-align: center;
+        opacity: 0.75;
+        transition: 0.3s; 
+      }
+      .card:hover{
+        transform: translateY(-20px);
+        background-color: #ffffff;
+        opacity: 1;
+        cursor: pointer;
+      }
+      .center {
+        text-align: center;
+      }
+      .grid-container {
+        display: grid;
+        gap: 40px 70px;
+        grid-template-columns: auto auto auto;
+        padding: 90px;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 60px;
+      }
+      .nav-item{
+        font-size: 60px;
+      }
 
     </style>
    </head>
-
-  <h1>To Do List</h1>
-
-  <h5>User: </h5>
-  <p>{{user}}</p>
-
-
-  <table>
-    <tr>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Description</th>
-      
-    </tr>
-    
+   <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">{{user}}'s ToDo List</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="btn btn-primary btn-lg p-4 me-5" href="{% url 'todolist:show_createtask' %}">Tambah Task</a>
+          </li>
+          <li class="nav-item">   
+            <a class="btn btn-danger btn-lg p-4 me-5" href="{% url 'todolist:logout' %}">Logout</a>       
+          </li>
+        </ul>
+        <span class="navbar-text">
+          Last login at: {{last_login}}
+        </span>
+      </div>
+    </div>
+  </nav>
+ 
+ <div class="grid-container"> 
     {% for data in task %}
     {% if request.user == data.user %}
-    <tr>
-        <th>{{data.date}}</th>
-        <th>{{data.title}}</th>
-        <th>{{data.description}}</th>
-    </tr>
+        <div class="card">
+          <h1>{{data.title}}</h1>
+          <p>{{data.description}}</p>
+          <p>{{data.date}}</p>
+        </div> 
     {% endif %}
-{% endfor %}
-
-  </table>
-  <h5>Sesi terakhir login: {{ last_login }}</h5>
-  <button><a href="{% url 'todolist:show_createtask' %}">Tambah Task Baru</a></button>
-  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+    {% endfor %}
+  </div>
 
 </html>

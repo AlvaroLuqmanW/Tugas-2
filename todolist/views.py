@@ -14,6 +14,7 @@ from django.contrib.auth.decorators import login_required
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .forms import TaskForm
+from .forms import CustomUserCreationForm  
 import datetime
 
 
@@ -46,13 +47,15 @@ def show_createtask(request):
     
 
 def register(request):
-    form = UserCreationForm()
+    form = CustomUserCreationForm()
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'Akun telah berhasil dibuat!')
             return redirect('todolist:login')
+        else:  
+            form = CustomUserCreationForm()  
     
     context = {'form':form}
     return render(request, 'register.html', context)
