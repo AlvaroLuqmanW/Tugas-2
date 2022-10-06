@@ -41,14 +41,19 @@ Mengunggah atau menautkan ke beberapa file CSS dapat meningkatkan waktu pengundu
 > Inline CSS digunakan untuk menata elemen HTML tertentu. Untuk gaya CSS ini, kita hanya perlu menambahkan atribut gaya ke setiap tag HTML, tanpa menggunakan penyeleksi. Jenis CSS ini sangat tidak disarankan, karena setiap tag HTML perlu ditata secara individual. Mengelola situs web Anda mungkin menjadi terlalu sulit jika kita hanya menggunakan CSS sebaris. Namun, CSS sebaris dalam HTML dapat berguna dalam beberapa situasi. Misalnya, dalam kasus di mana kita tidak memiliki akses ke file CSS atau perlu menerapkan gaya untuk satu elemen saja. Kelebihan dari CSS Inline adalah kita dapat dengan mudah dan cepat memasukkan aturan CSS ke halaman HTML. Itulah mengapa metode ini berguna untuk menguji atau melihat pratinjau perubahan, dan melakukan perbaikan cepat pada situs web. Kita tidak perlu membuat dan mengunggah dokumen terpisah seperti pada gaya eksternal. Kekurangannya adalah menambahkan aturan CSS ke setiap elemen HTML memakan waktu dan membuat struktur HTML Anda berantakan. Menata beberapa elemen dapat memengaruhi ukuran halaman dan waktu pengunduhan.
   
 ## Jelaskan tag HTML5 yang kamu ketahui.
-> <p>  </p> adalah paragraf tag html. Tag ini memformat teks apa pun antara tag <p> pembuka dan tag </p> penutup sebagai paragraf standar atau teks isi utama.
-> <h2>  </h2> adalah heading tag html. Menggunakan tag ini akan memformat teks apa pun antara tag pembuka <h2> dan tag penutup </h2> sebagai heading 2.
-> <b>  </b> adalah bold tag html. Tag ini akan memformat teks apa pun antara tag pembuka <b> dan tag penutup </b> sebagai huruf tebal.
+> p dan /p adalah paragraf tag html. Tag ini memformat teks apa pun antara tag p pembuka dan tag /p penutup sebagai paragraf standar atau teks isi utama.
+
+> h2 dan /h2 adalah heading tag html. Menggunakan tag ini akan memformat teks apa pun antara tag pembuka h2 dan tag penutup /h2 sebagai heading 2.
+
+> b dan /b adalah bold tag html. Tag ini akan memformat teks apa pun antara tag pembuka b dan tag penutup /b sebagai huruf tebal.
   
 ## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 >CSS element selector: Element selector memilih elemen HTML berdasarkan nama elemen.
+
 > CSS ID Selector: ID selector menggunakan atribut ID dari elemen HTML untuk memilih elemen tertentu. ID dari sebuah elemen unik dalam sebuah halaman, jadi pemilih id digunakan untuk memilih satu elemen unik. Untuk memilih elemen dengan id tertentu, tulis karakter hash (#), diikuti dengan id elemen.
+
 > CSS class Selector: Class selector memilih elemen HTML dengan atribut kelas tertentu. Untuk memilih elemen dengan kelas tertentu, tulis karakter titik (.), diikuti dengan nama kelas.
+
 > CSS Universal Selector: Universal selector (*) memilih semua elemen HTML pada halaman.
   
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
