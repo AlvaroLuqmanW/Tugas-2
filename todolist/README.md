@@ -1,3 +1,5 @@
+# TUGAS 4
+
 ## LINK HEROKU
 > https://tugas-alvaroluqmanw-pbp.herokuapp.com/todolist/login/
 ## Akun Pengguna Tersedia:
@@ -26,4 +28,47 @@ adalah POST dan tidak mencantum {% csrf_token %} pada file html.
   saya menggunakan form manual untuk menerima data 'title' dan 'description' untuk membuat object Task baru dengan atribut tersebut. Setelah di buat, maka saya save form
   agar data tersebut tersimpan dalam database, dan bisa ditampilkan di halaman web todolist utama.
   
+# TUGAS 5
+  
+## Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
+> CSS internal mengharuskan kita untuk menambahkan tag <style> di bagian <head> dokumen HTML.
+Gaya CSS ini adalah metode yang efektif untuk menata satu halaman. Namun, menggunakan gaya ini untuk beberapa halaman memakan waktu karena Anda perlu menempatkan aturan CSS di setiap halaman situs web. Kelebihan dari internal CSS adalah kita dapat menggunakan class dan ID selector dalam file html yang sama, sehingga kita tidak perlu mengunggah banyak file. Kekurangan dari internal CSS adalah menambahkan kode ke file HTML dapat meningkatkan ukuran halaman dan waktu pemuatan.
 
+> Dengan CSS external, kita mampu menautkan halaman web kita ke file .css external, yang dapat dibuat oleh editor teks apa pun di perangkat kita, seperti Notepad++.
+Jenis CSS ini adalah metode yang lebih efisien, terutama untuk menata situs web besar. Dengan mengedit satu file .css, kita dapat mengubah seluruh situs sekaligus. Kelebihan dari CSS external adalah karena kode CSS berada dalam file terpisah, file HTML akan memiliki struktur yang lebih bersih dan ukurannya lebih kecil, sehingga kita dapat menggunakan file .css yang sama untuk beberapa halaman. Kekurangannya adalah halaman web mungkin tidak dirender dengan benar hingga CSS eksternal dimuat.
+Mengunggah atau menautkan ke beberapa file CSS dapat meningkatkan waktu pengunduhan situs Anda.
+  
+> Inline CSS digunakan untuk menata elemen HTML tertentu. Untuk gaya CSS ini, kita hanya perlu menambahkan atribut gaya ke setiap tag HTML, tanpa menggunakan penyeleksi. Jenis CSS ini sangat tidak disarankan, karena setiap tag HTML perlu ditata secara individual. Mengelola situs web Anda mungkin menjadi terlalu sulit jika kita hanya menggunakan CSS sebaris. Namun, CSS sebaris dalam HTML dapat berguna dalam beberapa situasi. Misalnya, dalam kasus di mana kita tidak memiliki akses ke file CSS atau perlu menerapkan gaya untuk satu elemen saja. Kelebihan dari CSS Inline adalah kita dapat dengan mudah dan cepat memasukkan aturan CSS ke halaman HTML. Itulah mengapa metode ini berguna untuk menguji atau melihat pratinjau perubahan, dan melakukan perbaikan cepat pada situs web. Kita tidak perlu membuat dan mengunggah dokumen terpisah seperti pada gaya eksternal. Kekurangannya adalah menambahkan aturan CSS ke setiap elemen HTML memakan waktu dan membuat struktur HTML Anda berantakan. Menata beberapa elemen dapat memengaruhi ukuran halaman dan waktu pengunduhan.
+  
+## Jelaskan tag HTML5 yang kamu ketahui.
+> p dan /p adalah paragraf tag html. Tag ini memformat teks apa pun antara tag p pembuka dan tag /p penutup sebagai paragraf standar atau teks isi utama.
+
+> h2 dan /h2 adalah heading tag html. Menggunakan tag ini akan memformat teks apa pun antara tag pembuka h2 dan tag penutup /h2 sebagai heading 2.
+
+> b dan /b adalah bold tag html. Tag ini akan memformat teks apa pun antara tag pembuka b dan tag penutup /b sebagai huruf tebal.
+  
+## Jelaskan tipe-tipe CSS selector yang kamu ketahui.
+>CSS element selector: Element selector memilih elemen HTML berdasarkan nama elemen.
+
+> CSS ID Selector: ID selector menggunakan atribut ID dari elemen HTML untuk memilih elemen tertentu. ID dari sebuah elemen unik dalam sebuah halaman, jadi pemilih id digunakan untuk memilih satu elemen unik. Untuk memilih elemen dengan id tertentu, tulis karakter hash (#), diikuti dengan id elemen.
+
+> CSS class Selector: Class selector memilih elemen HTML dengan atribut kelas tertentu. Untuk memilih elemen dengan kelas tertentu, tulis karakter titik (.), diikuti dengan nama kelas.
+
+> CSS Universal Selector: Universal selector (*) memilih semua elemen HTML pada halaman.
+  
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
+> Untuk men-design halaman todolist saya, saya menggunakan internal dan inline CSS sebagai pilihan style saya karena lebih mudah. Saya menggunakan beberapa tipe-tipe CSS selector juga seperti element, grouping dan class selector untuk semua elemen html saya.
+
+# TUGAS 6
+
+## Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+> Async adalah multi-thread, yang berarti operasi atau program dapat berjalan secara paralel. Sinkronisasi adalah single-thread, jadi hanya satu operasi atau program yang akan berjalan pada satu waktu. Async tidak memblokir, yang berarti akan mengirim banyak request ke server. Sinkronisasi memblokir — itu hanya akan mengirim server satu request pada satu waktu dan akan menunggu permintaan itu dijawab oleh server. Async meningkatkan throughput karena beberapa operasi dapat berjalan secara bersamaan. Sinkronisasi lebih lambat dan lebih metodis.
+
+## Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma Event-Driven Programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+> Event-Driven Programming adalah paradigma pemrograman di mana eksekusi program ditentukan oleh peristiwa pengguna baru (klik mouse, penekanan tombol), keluaran sensor, atau pesan yang lewat dari program lain. Salah satu contoh penerapannya adalah ketika penambahan task.
+ 
+## Jelaskan penerapan asynchronous programming pada AJAX.
+> AJAX sendiri merupakan singkatan dari asynchronous JavaScript and XML, dan adalah teknik yang memungkinkan halaman web diperbarui secara asynchronous, yang berarti bahwa browser tidak perlu memuat ulang seluruh halaman ketika hanya sedikit data pada halaman yang telah berubah. AJAX hanya meneruskan informasi yang diperbarui ke dan dari server.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+> Implementasi AJAX dalam tugas ini adalah ketika kita menambah task dan menampilkan hasilnya secara langsung di web tanpa harus ngerefresh.
