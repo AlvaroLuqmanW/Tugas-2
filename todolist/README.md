@@ -58,3 +58,17 @@ Mengunggah atau menautkan ke beberapa file CSS dapat meningkatkan waktu pengundu
   
 ## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas
 > Untuk men-design halaman todolist saya, saya menggunakan internal dan inline CSS sebagai pilihan style saya karena lebih mudah. Saya menggunakan beberapa tipe-tipe CSS selector juga seperti element, grouping dan class selector untuk semua elemen html saya.
+
+# TUGAS 6
+
+## Jelaskan perbedaan antara asynchronous programming dengan synchronous programming.
+> Async adalah multi-thread, yang berarti operasi atau program dapat berjalan secara paralel. Sinkronisasi adalah single-thread, jadi hanya satu operasi atau program yang akan berjalan pada satu waktu. Async tidak memblokir, yang berarti akan mengirim banyak request ke server. Sinkronisasi memblokir — itu hanya akan mengirim server satu request pada satu waktu dan akan menunggu permintaan itu dijawab oleh server. Async meningkatkan throughput karena beberapa operasi dapat berjalan secara bersamaan. Sinkronisasi lebih lambat dan lebih metodis.
+
+## Dalam penerapan JavaScript dan AJAX, terdapat penerapan paradigma Event-Driven Programming. Jelaskan maksud dari paradigma tersebut dan sebutkan salah satu contoh penerapannya pada tugas ini.
+> Event-Driven Programming adalah paradigma pemrograman di mana eksekusi program ditentukan oleh peristiwa pengguna baru (klik mouse, penekanan tombol), keluaran sensor, atau pesan yang lewat dari program lain. Salah satu contoh penerapannya adalah ketika penambahan task.
+ 
+## Jelaskan penerapan asynchronous programming pada AJAX.
+> AJAX sendiri merupakan singkatan dari asynchronous JavaScript and XML, dan adalah teknik yang memungkinkan halaman web diperbarui secara asynchronous, yang berarti bahwa browser tidak perlu memuat ulang seluruh halaman ketika hanya sedikit data pada halaman yang telah berubah. AJAX hanya meneruskan informasi yang diperbarui ke dan dari server.
+
+## Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
+> Implementasi AJAX dalam tugas ini adalah ketika kita menambah task dan menampilkan hasilnya secara langsung di web tanpa harus ngerefresh.
