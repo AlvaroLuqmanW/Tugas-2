@@ -12,8 +12,8 @@ class TaskForm(forms.ModelForm):
         fields = ('title', 'description')
 
         widgets = {
-            'title' :forms.TextInput(attrs={'class':'form-control'}),
-            'description' : forms.Textarea(attrs={'class':'form-control'}) 
+            'title' :forms.TextInput(attrs={'class':'form-control', 'id' : 'title'}),
+            'description' : forms.Textarea(attrs={'class':'form-control', 'id' : 'description'}) 
         }
 
 class CustomUserCreationForm(UserCreationForm):  

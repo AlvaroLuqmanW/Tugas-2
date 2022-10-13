@@ -20,12 +20,16 @@ import datetime
 
 # Create your views here.
 @login_required(login_url='/todolist/login/')
-def show_todolist(request):    
+
+def show_todolist(request): 
+    form = TaskForm(request.POST)   
+
     data_task = Task.objects.all()
     context = {
         'task': data_task,
         'last_login': request.COOKIES['last_login'],
-        'user': request.user
+        'user': request.user,
+        'form': form
     }
     return render(request, 'todolist.html', context)
 
@@ -44,7 +48,14 @@ def show_createtask(request):
         form = TaskForm()
     context = {'form': form}
     return render(request, 'create-task.html', context)
-    
+
+def addtask(request):
+    title = title
+    description = description
+    user = request.user
+    task_temp = tambah_task(title, description, user)
+    task_temp.save()
+    return render(request, 'add.html')
 
 def register(request):
     form = CustomUserCreationForm()
@@ -80,6 +91,15 @@ def logout_user(request):
     response = HttpResponseRedirect(reverse('todolist:login'))
     response.delete_cookie('last_login')
     return response
+
+def show_json(request):
+    data_task = Task.objects.all()
+    context = {
+        'task': data_task,
+        'last_login': request.COOKIES['last_login'],
+        'user': request.user,
+    }
+    return render(request, 'todolist-json.html', context)    
 
 def tambah_task(title, description, user):
     return Task.objects.create(title=title, description=description, user = user)

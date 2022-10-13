@@ -8,5 +8,7 @@ urlpatterns = [
     path('login/', login_user, name='login'),
     path('create-task/', show_createtask, name='show_createtask'),
     path('register/', register, name='register'),
-    path('logout/', logout_user, name='logout')
+    path('logout/', logout_user, name='logout'),
+    path('json/', show_json, name='show_json'),
+    path('add/', addtask, name = 'addtask'),
 ]
