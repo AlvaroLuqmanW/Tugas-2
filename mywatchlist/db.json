@@ -1,0 +1,94 @@
+[
+    {
+        
+            "watched":"Watched",
+            "title":"Star Wars: Phantom Menace",
+            "rating": "4",
+            "release_date": "May 19 1999",
+            "review": "Plot yang bagus dan sangat menggambarkan plot peperangan dalam triology Star Wars"
+        
+},
+{
+       
+            "watched":"Watched",
+            "title":"Star Wars: Attack of the Clones",
+            "rating": "4",
+            "release_date": "May 16 2002",
+            "review": "Saya suka dengan kehadiran clone troopers pada film ini."
+        
+    },
+    {
+        "model":"mywatchlist.mywatchlist",
+        "pk":3,
+        "fields":{
+            "watched":"Watched",
+            "title":"Star Wars: Revenge of the Sith",
+            "rating": "5",
+            "release_date": "May 19 2005",
+            "review": "Plot sangat bagus dan terdapat adegan pertarungan antara Obi Wan dan Anakin yang sangat keren"
+        }
+    },
+    {
+        
+            "watched":"Watched",
+            "title":"Star Wars: A New Hope",
+            "rating": "4",
+            "release_date": "June 17 1997",
+            "review": "Film lanjutan dari Star Wars: Revenge of the sith ini mengenalkan kepada kita karakter-karakter yang menarik"
+        
+    },
+    {
+        
+            "watched":"Watched",
+            "title":"Star Wars: The Empire Strikes Back ",
+            "rating": "4",
+            "release_date": "May 21 1980",
+            "review": "Memperkenalkan kita kepada karakter-karakter yang baru, dan juga menggandung plot twist yang bagus"
+        
+    },
+    {
+        
+            "watched":"Watched",
+            "title":"Star Wars: Return of the Jedi",
+            "rating": "5",
+            "release_date": "May 25 1983",
+            "review": "Pertarungan yang sangat bagus antara Darth Vader dan Luke Skywalker, dan peperangan yang keren antara Rebel Alliance dan Empire"
+        
+    },
+    {
+       
+            "watched":"Watched",
+            "title":"Star Wars: The Force Awakens",
+            "rating": "4",
+            "release_date": "December 18 2015",
+            "review": "Permulaan yang bagus untuk trilogi yang baru"
+        
+    },
+    {
+        
+            "watched":"Watched",
+            "title":"Star Wars: The Last Jedi",
+            "rating": "3",
+            "release_date": "December 13 2017",
+            "review": "Ahkir yang kurang baik bagi saya, karena Luke Skywalker mati"
+        
+    },
+    {
+       
+            "watched":"Watched",
+            "title":"Star Wars: The Rise of Skywalker",
+            "rating": "2",
+            "release_date": "December 18 2019",
+            "review": "Plot berantakan, dan banyak aspek pada film ini yang tidak masuk akal"
+        
+    },
+    {
+        
+            "watched":"Watched",
+            "title":"Avengers: Endgame",
+            "rating": "5",
+            "release_date": "April 24 2019",
+            "review": "Film sangat keren karena semua karakter Marvel dapat berkumpul dan bersatu melawan Thanos"
+        
+    }
+]
